@@ -1,1 +1,1 @@
-# CrossPlatform_CashRegister_App
+# Cash-Register-App
