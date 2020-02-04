@@ -7,8 +7,9 @@
              x:Class="Assignment1.ManagerPanelPage">
     <ContentPage.Content>
         <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-            <Button Text="History" Clicked="historyOrRestock"/>
-            <Button Text="Restock" Clicked="historyOrRestock"/>
+            <Button Text="History" Clicked="redirect"/>
+            <Button Text="Restock" Clicked="redirect"/>
+            <Button Text="Add New Product" Clicked="redirect"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

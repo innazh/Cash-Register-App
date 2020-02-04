@@ -86,10 +86,6 @@ namespace Assignment1
                 HistoryItem hi = new HistoryItem(DateTime.Now, items[i].Name, quantity, Double.Parse(Total.Text));
                 App.Database.SaveItemAsync(hi);//suspicious
 
-                //List<HistoryItem> hil = new List<HistoryItem>();
-                //hil = App.Database.GetItemsAsync().Result;
-                //Console.WriteLine(String.Join(", ", hil));
-
                 //Reset the text fields
                 Quantity.Text = "0";
                 Total.Text = "Total";
@@ -103,7 +99,7 @@ namespace Assignment1
         //Note: consider chagning the return type to Task
         async void serveManagerPanel(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ManagerPanelPage());
+            await Navigation.PushAsync(new ManagerPanelPage(items));
         }
     }
 }

@@ -6,10 +6,47 @@
              mc:Ignorable="d"
              x:Class="Assignment1.RestockPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid Padding="10">
+            <!--RowSpacing="10"
+          ColumnSpacing="10"
+          Opacity="10">-->
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="10*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Entry x:Name="entryQuantity" Placeholder="Enter new quantity" Text=""/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Grid.Row="1" >
+                <Button Text="Restock" Clicked="restockBtn"/>
+                <Button Text="Cancel" Clicked="cancelBtn"/>
+            </StackLayout>
+
+            <ListView Grid.Row="2" ItemsSource="{Binding items}" ItemSelected="OnListViewItemSelected"
+                  ItemTapped="OnListViewItemTapped">
+           <!--RowHeight="60">-->
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Label HorizontalOptions="Start" Padding="10, 10, 0, 0" 
+                                   Text="{Binding Name}"
+                                   TextColor="Black"/>
+                                <Label TextColor="Black" HorizontalOptions="EndAndExpand" Padding="0, 0, 10, 10" 
+                                   Text="{Binding Quantity}"
+                                   VerticalOptions="End" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

@@ -56,3 +56,8 @@ D:\Seneca\DPS926\Assignment1\Assignment1.iOS\obj\iPhoneSimulator\Debug\XamlC.sta
 D:\Seneca\DPS926\Assignment1\Assignment1.iOS\obj\iPhoneSimulator\Debug\Assignment1.iOS.csproj.CopyComplete
 D:\Seneca\DPS926\Assignment1\Assignment1.iOS\obj\iPhoneSimulator\Debug\Assignment1.iOS.exe
 D:\Seneca\DPS926\Assignment1\Assignment1.iOS\obj\iPhoneSimulator\Debug\Assignment1.iOS.pdb
+D:\Seneca\DPS926\Assignment1\Assignment1.iOS\bin\iPhoneSimulator\Debug\SQLite-net.dll
+D:\Seneca\DPS926\Assignment1\Assignment1.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.batteries_green.dll
+D:\Seneca\DPS926\Assignment1\Assignment1.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.batteries_v2.dll
+D:\Seneca\DPS926\Assignment1\Assignment1.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.core.dll
+D:\Seneca\DPS926\Assignment1\Assignment1.iOS\bin\iPhoneSimulator\Debug\SQLitePCLRaw.provider.sqlite3.dll
